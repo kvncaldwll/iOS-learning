@@ -62,7 +62,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                         subThoroughfare = firstPlacemark.subThoroughfare!
                     }
                     
-                    self.addressLabel.text = "\(subThoroughfare) \(firstPlacemark.thoroughfare!) \n \(firstPlacemark.subLocality!) \n \(firstPlacemark.subAdministrativeArea!) \n \(firstPlacemark.postalCode!) \n \(firstPlacemark.country!)"
+                    self.addressLabel.text = "\(subThoroughfare) \(firstPlacemark.thoroughfare) \n \(firstPlacemark.subLocality) \n \(firstPlacemark.subAdministrativeArea) \n \(firstPlacemark.postalCode) \n \(firstPlacemark.country)"
                 }
                 
 //                if let actualPlacemarks = placemarks {
