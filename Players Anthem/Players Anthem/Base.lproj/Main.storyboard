@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Players_Anthem" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16G-pG-nUd">
+                                <rect key="frame" x="285" y="66" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="56c-zd-wre"/>
+                                    <constraint firstAttribute="height" constant="30" id="P7y-uh-VPx"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMf-w9-SgL"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ySq-9e-PmM">
+                                <rect key="frame" x="103" y="182" width="393" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2f5-6I-gnq"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="volumeController:" destination="BYZ-38-t0r" eventType="valueChanged" id="WsW-B9-r9F"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjr-Qa-VrI">
+                                <rect key="frame" x="279" y="116" width="42" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Osp-yr-jDc"/>
+                                    <constraint firstAttribute="width" constant="42" id="XlQ-Ie-B8T"/>
+                                </constraints>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMi-et-rLf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="16G-pG-nUd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="12N-1o-RTo"/>
+                            <constraint firstItem="pjr-Qa-VrI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Y7-uz-c1I"/>
+                            <constraint firstItem="ySq-9e-PmM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BK3-Mj-Zxk"/>
+                            <constraint firstItem="16G-pG-nUd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="EIq-xJ-w8n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="16G-pG-nUd" secondAttribute="trailing" constant="265" id="Gl3-ZK-Bix"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ySq-9e-PmM" secondAttribute="trailing" constant="86" id="NiV-wk-7wJ"/>
+                            <constraint firstItem="pjr-Qa-VrI" firstAttribute="top" secondItem="16G-pG-nUd" secondAttribute="bottom" constant="20" id="QDb-Ye-QCZ"/>
+                            <constraint firstItem="ySq-9e-PmM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="85" id="U3S-MP-G0D"/>
+                            <constraint firstItem="ySq-9e-PmM" firstAttribute="top" secondItem="pjr-Qa-VrI" secondAttribute="bottom" constant="36" id="pg9-Rw-SZQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="ySq-9e-PmM" id="B1v-7G-3qZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373" y="346"/>
+        </scene>
+    </scenes>
+</document>

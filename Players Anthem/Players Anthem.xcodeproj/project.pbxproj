@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F42AAF6F1D3DEDFD0016A27C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AAF6E1D3DEDFD0016A27C /* AppDelegate.swift */; };
+		F42AAF711D3DEDFD0016A27C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42AAF701D3DEDFD0016A27C /* ViewController.swift */; };
+		F42AAF741D3DEDFD0016A27C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42AAF721D3DEDFD0016A27C /* Main.storyboard */; };
+		F42AAF761D3DEDFD0016A27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42AAF751D3DEDFD0016A27C /* Assets.xcassets */; };
+		F42AAF791D3DEDFD0016A27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42AAF771D3DEDFD0016A27C /* LaunchScreen.storyboard */; };
+		F42AAF811D3DEED00016A27C /* playersanthem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F42AAF801D3DEED00016A27C /* playersanthem.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F42AAF6B1D3DEDFD0016A27C /* Players Anthem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Players Anthem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42AAF6E1D3DEDFD0016A27C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F42AAF701D3DEDFD0016A27C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F42AAF731D3DEDFD0016A27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F42AAF751D3DEDFD0016A27C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F42AAF781D3DEDFD0016A27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F42AAF7A1D3DEDFD0016A27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42AAF801D3DEED00016A27C /* playersanthem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = playersanthem.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F42AAF681D3DEDFD0016A27C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F42AAF621D3DEDFD0016A27C = {
+			isa = PBXGroup;
+			children = (
+				F42AAF6D1D3DEDFD0016A27C /* Players Anthem */,
+				F42AAF6C1D3DEDFD0016A27C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F42AAF6C1D3DEDFD0016A27C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F42AAF6B1D3DEDFD0016A27C /* Players Anthem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F42AAF6D1D3DEDFD0016A27C /* Players Anthem */ = {
+			isa = PBXGroup;
+			children = (
+				F42AAF6E1D3DEDFD0016A27C /* AppDelegate.swift */,
+				F42AAF701D3DEDFD0016A27C /* ViewController.swift */,
+				F42AAF801D3DEED00016A27C /* playersanthem.mp3 */,
+				F42AAF721D3DEDFD0016A27C /* Main.storyboard */,
+				F42AAF751D3DEDFD0016A27C /* Assets.xcassets */,
+				F42AAF771D3DEDFD0016A27C /* LaunchScreen.storyboard */,
+				F42AAF7A1D3DEDFD0016A27C /* Info.plist */,
+			);
+			path = "Players Anthem";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F42AAF6A1D3DEDFD0016A27C /* Players Anthem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F42AAF7D1D3DEDFD0016A27C /* Build configuration list for PBXNativeTarget "Players Anthem" */;
+			buildPhases = (
+				F42AAF671D3DEDFD0016A27C /* Sources */,
+				F42AAF681D3DEDFD0016A27C /* Frameworks */,
+				F42AAF691D3DEDFD0016A27C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Players Anthem";
+			productName = "Players Anthem";
+			productReference = F42AAF6B1D3DEDFD0016A27C /* Players Anthem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F42AAF631D3DEDFD0016A27C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = me;
+				TargetAttributes = {
+					F42AAF6A1D3DEDFD0016A27C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F42AAF661D3DEDFD0016A27C /* Build configuration list for PBXProject "Players Anthem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F42AAF621D3DEDFD0016A27C;
+			productRefGroup = F42AAF6C1D3DEDFD0016A27C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F42AAF6A1D3DEDFD0016A27C /* Players Anthem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F42AAF691D3DEDFD0016A27C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42AAF811D3DEED00016A27C /* playersanthem.mp3 in Resources */,
+				F42AAF791D3DEDFD0016A27C /* LaunchScreen.storyboard in Resources */,
+				F42AAF761D3DEDFD0016A27C /* Assets.xcassets in Resources */,
+				F42AAF741D3DEDFD0016A27C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F42AAF671D3DEDFD0016A27C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F42AAF711D3DEDFD0016A27C /* ViewController.swift in Sources */,
+				F42AAF6F1D3DEDFD0016A27C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F42AAF721D3DEDFD0016A27C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F42AAF731D3DEDFD0016A27C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F42AAF771D3DEDFD0016A27C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F42AAF781D3DEDFD0016A27C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F42AAF7B1D3DEDFD0016A27C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F42AAF7C1D3DEDFD0016A27C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F42AAF7E1D3DEDFD0016A27C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Players Anthem/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.me.Players-Anthem";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F42AAF7F1D3DEDFD0016A27C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Players Anthem/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.me.Players-Anthem";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F42AAF661D3DEDFD0016A27C /* Build configuration list for PBXProject "Players Anthem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42AAF7B1D3DEDFD0016A27C /* Debug */,
+				F42AAF7C1D3DEDFD0016A27C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F42AAF7D1D3DEDFD0016A27C /* Build configuration list for PBXNativeTarget "Players Anthem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F42AAF7E1D3DEDFD0016A27C /* Debug */,
+				F42AAF7F1D3DEDFD0016A27C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F42AAF631D3DEDFD0016A27C /* Project object */;
+}
