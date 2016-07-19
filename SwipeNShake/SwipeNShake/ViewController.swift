@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
-
+    
+    var player: AVAudioPlayer = AVAudioPlayer()
+    var sounds = ["hooray", "laugh", "scratch", "splash", "swoosh"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +41,16 @@ class ViewController: UIViewController {
         
         if event?.subtype == UIEventSubtype.MotionShake {
             print("shake it off")
+            
+//            var random = Int(arc4random_uniform(UInt32(sounds.count)))
+            
+            let fileLocation = NSBundle.mainBundle().pathForResource("laugh", ofType: "wav")
+            
+            do {
+                try player = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: fileLocation!))
+                player.play()
+
+            } catch { }
         }
     }
 
@@ -51,14 +64,46 @@ class ViewController: UIViewController {
             case UISwipeGestureRecognizerDirection.Right:
                 print("right is wrong")
                 
+                let fileLocation = NSBundle.mainBundle().pathForResource("swoosh", ofType: "wav")
+                
+                do {
+                    try player = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: fileLocation!))
+                    player.play()
+                    
+                } catch { }
+                
             case UISwipeGestureRecognizerDirection.Up:
                 print("up up and away!")
+                
+                let fileLocation = NSBundle.mainBundle().pathForResource("hooray", ofType: "wav")
+                
+                do {
+                    try player = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: fileLocation!))
+                    player.play()
+                    
+                } catch { }
                 
             case UISwipeGestureRecognizerDirection.Left:
                 print("left alone")
                 
+                let fileLocation = NSBundle.mainBundle().pathForResource("scratch", ofType: "wav")
+                
+                do {
+                    try player = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: fileLocation!))
+                    player.play()
+                    
+                } catch { }
+                
             case UISwipeGestureRecognizerDirection.Down:
                 print("down for the count")
+                
+                let fileLocation = NSBundle.mainBundle().pathForResource("splash", ofType: "wav")
+                
+                do {
+                    try player = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: fileLocation!))
+                    player.play()
+                    
+                } catch { }
                 
             default:
                 break

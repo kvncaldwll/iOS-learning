@@ -12,6 +12,11 @@
 		F48E6D1C1D3E9F890045AAA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48E6D1A1D3E9F890045AAA3 /* Main.storyboard */; };
 		F48E6D1E1D3E9F890045AAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F48E6D1D1D3E9F890045AAA3 /* Assets.xcassets */; };
 		F48E6D211D3E9F890045AAA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F48E6D1F1D3E9F890045AAA3 /* LaunchScreen.storyboard */; };
+		F48E6D2C1D3EAA8D0045AAA3 /* scratch.wav in Resources */ = {isa = PBXBuildFile; fileRef = F48E6D291D3EAA8D0045AAA3 /* scratch.wav */; };
+		F48E6D2D1D3EAA8D0045AAA3 /* splash.wav in Resources */ = {isa = PBXBuildFile; fileRef = F48E6D2A1D3EAA8D0045AAA3 /* splash.wav */; };
+		F48E6D2E1D3EAA8D0045AAA3 /* swoosh.wav in Resources */ = {isa = PBXBuildFile; fileRef = F48E6D2B1D3EAA8D0045AAA3 /* swoosh.wav */; };
+		F48E6D311D3EAA970045AAA3 /* hooray.wav in Resources */ = {isa = PBXBuildFile; fileRef = F48E6D2F1D3EAA970045AAA3 /* hooray.wav */; };
+		F48E6D321D3EAA970045AAA3 /* laugh.wav in Resources */ = {isa = PBXBuildFile; fileRef = F48E6D301D3EAA970045AAA3 /* laugh.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F48E6D1D1D3E9F890045AAA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F48E6D201D3E9F890045AAA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F48E6D221D3E9F890045AAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F48E6D291D3EAA8D0045AAA3 /* scratch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scratch.wav; sourceTree = "<group>"; };
+		F48E6D2A1D3EAA8D0045AAA3 /* splash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = splash.wav; sourceTree = "<group>"; };
+		F48E6D2B1D3EAA8D0045AAA3 /* swoosh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swoosh.wav; sourceTree = "<group>"; };
+		F48E6D2F1D3EAA970045AAA3 /* hooray.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hooray.wav; sourceTree = "<group>"; };
+		F48E6D301D3EAA970045AAA3 /* laugh.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = laugh.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +68,23 @@
 				F48E6D181D3E9F890045AAA3 /* ViewController.swift */,
 				F48E6D1A1D3E9F890045AAA3 /* Main.storyboard */,
 				F48E6D1D1D3E9F890045AAA3 /* Assets.xcassets */,
+				F48E6D281D3EAA7A0045AAA3 /* sounds */,
 				F48E6D1F1D3E9F890045AAA3 /* LaunchScreen.storyboard */,
 				F48E6D221D3E9F890045AAA3 /* Info.plist */,
 			);
 			path = SwipeNShake;
+			sourceTree = "<group>";
+		};
+		F48E6D281D3EAA7A0045AAA3 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F48E6D2F1D3EAA970045AAA3 /* hooray.wav */,
+				F48E6D301D3EAA970045AAA3 /* laugh.wav */,
+				F48E6D291D3EAA8D0045AAA3 /* scratch.wav */,
+				F48E6D2A1D3EAA8D0045AAA3 /* splash.wav */,
+				F48E6D2B1D3EAA8D0045AAA3 /* swoosh.wav */,
+			);
+			name = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +119,7 @@
 				TargetAttributes = {
 					F48E6D121D3E9F890045AAA3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CL7573Y62D;
 					};
 				};
 			};
@@ -123,8 +147,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48E6D211D3E9F890045AAA3 /* LaunchScreen.storyboard in Resources */,
+				F48E6D2E1D3EAA8D0045AAA3 /* swoosh.wav in Resources */,
 				F48E6D1E1D3E9F890045AAA3 /* Assets.xcassets in Resources */,
 				F48E6D1C1D3E9F890045AAA3 /* Main.storyboard in Resources */,
+				F48E6D311D3EAA970045AAA3 /* hooray.wav in Resources */,
+				F48E6D2C1D3EAA8D0045AAA3 /* scratch.wav in Resources */,
+				F48E6D321D3EAA970045AAA3 /* laugh.wav in Resources */,
+				F48E6D2D1D3EAA8D0045AAA3 /* splash.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +280,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwipeNShake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.me.SwipeNShake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwipeNShake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.me.SwipeNShake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
