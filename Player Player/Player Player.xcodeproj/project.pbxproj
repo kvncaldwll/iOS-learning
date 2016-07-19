@@ -12,6 +12,11 @@
 		F42AAF941D3DF89E0016A27C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42AAF921D3DF89E0016A27C /* Main.storyboard */; };
 		F42AAF961D3DF89E0016A27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F42AAF951D3DF89E0016A27C /* Assets.xcassets */; };
 		F42AAF991D3DF89E0016A27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F42AAF971D3DF89E0016A27C /* LaunchScreen.storyboard */; };
+		F42AAFA31D3DFAB40016A27C /* kwgraduation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F42AAFA21D3DFAB40016A27C /* kwgraduation.jpg */; };
+		F42AAFA51D3E009A0016A27C /* vol.png in Resources */ = {isa = PBXBuildFile; fileRef = F42AAFA41D3E009A0016A27C /* vol.png */; };
+		F42AAFA91D3E01970016A27C /* ff.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F42AAFA81D3E01970016A27C /* ff.jpeg */; };
+		F42AAFAB1D3E019E0016A27C /* rewind.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F42AAFAA1D3E019E0016A27C /* rewind.jpeg */; };
+		F42AAFAD1D3E0A2E0016A27C /* good-life.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F42AAFAC1D3E0A2E0016A27C /* good-life.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		F42AAF951D3DF89E0016A27C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F42AAF981D3DF89E0016A27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F42AAF9A1D3DF89E0016A27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42AAFA21D3DFAB40016A27C /* kwgraduation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kwgraduation.jpg; sourceTree = "<group>"; };
+		F42AAFA41D3E009A0016A27C /* vol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vol.png; sourceTree = "<group>"; };
+		F42AAFA81D3E01970016A27C /* ff.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ff.jpeg; sourceTree = "<group>"; };
+		F42AAFAA1D3E019E0016A27C /* rewind.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rewind.jpeg; sourceTree = "<group>"; };
+		F42AAFAC1D3E0A2E0016A27C /* good-life.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "good-life.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +66,12 @@
 			children = (
 				F42AAF8E1D3DF89E0016A27C /* AppDelegate.swift */,
 				F42AAF901D3DF89E0016A27C /* ViewController.swift */,
+				F42AAFAC1D3E0A2E0016A27C /* good-life.mp3 */,
 				F42AAF921D3DF89E0016A27C /* Main.storyboard */,
+				F42AAFA81D3E01970016A27C /* ff.jpeg */,
+				F42AAFAA1D3E019E0016A27C /* rewind.jpeg */,
+				F42AAFA41D3E009A0016A27C /* vol.png */,
+				F42AAFA21D3DFAB40016A27C /* kwgraduation.jpg */,
 				F42AAF951D3DF89E0016A27C /* Assets.xcassets */,
 				F42AAF971D3DF89E0016A27C /* LaunchScreen.storyboard */,
 				F42AAF9A1D3DF89E0016A27C /* Info.plist */,
@@ -122,8 +137,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42AAFAB1D3E019E0016A27C /* rewind.jpeg in Resources */,
 				F42AAF991D3DF89E0016A27C /* LaunchScreen.storyboard in Resources */,
 				F42AAF961D3DF89E0016A27C /* Assets.xcassets in Resources */,
+				F42AAFAD1D3E0A2E0016A27C /* good-life.mp3 in Resources */,
+				F42AAFA31D3DFAB40016A27C /* kwgraduation.jpg in Resources */,
+				F42AAFA91D3E01970016A27C /* ff.jpeg in Resources */,
+				F42AAFA51D3E009A0016A27C /* vol.png in Resources */,
 				F42AAF941D3DF89E0016A27C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

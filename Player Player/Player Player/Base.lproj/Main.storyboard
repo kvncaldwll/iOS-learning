@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Player_Player" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,128 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIT-YV-ETa">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="gY7-xt-Nbv"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Good Life" id="oLo-JO-hz4">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="SwK-eA-976">
+                                            <connections>
+                                                <action selector="play:" destination="BYZ-38-t0r" id="CLi-ws-VPo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYM-B9-HJh">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="D8a-uI-ocr"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="pause" id="T6w-5l-KaC">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="liO-1D-kWX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="V53-OW-CAt"/>
+                                    <barButtonItem title="Stop" id="EdI-sa-JLn">
+                                        <connections>
+                                            <action selector="stop:" destination="BYZ-38-t0r" id="lgs-Iv-MiK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kwgraduation.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AzS-EE-iqm">
+                                <rect key="frame" x="175" y="144" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="RtK-rT-inn"/>
+                                    <constraint firstAttribute="height" constant="250" id="sRi-fk-DCj"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nXO-nP-RNi">
+                                <rect key="frame" x="18" y="514" width="564" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MqX-J0-OEc"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="adjustVolume:" destination="BYZ-38-t0r" eventType="valueChanged" id="tIL-ds-voa"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xTr-LL-Vaf">
+                                <rect key="frame" x="148" y="424" width="304" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="sit-wO-A8j"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="scrub:" destination="BYZ-38-t0r" eventType="valueChanged" id="cJV-ba-ABD"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rewind.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="HjQ-Qr-PU2">
+                                <rect key="frame" x="99" y="428" width="38" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="eOl-zg-5EJ"/>
+                                    <constraint firstAttribute="height" constant="22" id="tnO-aj-xrV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ff.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="0P3-aU-QDn">
+                                <rect key="frame" x="463" y="428" width="38" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="dCc-lZ-Y92"/>
+                                    <constraint firstAttribute="height" constant="22" id="fVx-R2-4tX"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vol.png" translatesAutoresizingMaskIntoConstraints="NO" id="473-jP-DVT">
+                                <rect key="frame" x="20" y="484" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pnG-QJ-daU"/>
+                                    <constraint firstAttribute="width" constant="30" id="qIW-Pf-fPf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xTr-LL-Vaf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3T1-9u-qqL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0P3-aU-QDn" secondAttribute="trailing" priority="999" constant="79" id="4cp-lL-fAr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qYM-B9-HJh" secondAttribute="trailing" constant="-20" id="6kH-TP-AR1"/>
+                            <constraint firstItem="HjQ-Qr-PU2" firstAttribute="top" secondItem="AzS-EE-iqm" secondAttribute="bottom" constant="34" id="Ar0-Q0-kiy"/>
+                            <constraint firstItem="AzS-EE-iqm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BCb-3p-uvr"/>
+                            <constraint firstItem="nXO-nP-RNi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BOa-aD-eBD"/>
+                            <constraint firstItem="xTr-LL-Vaf" firstAttribute="leading" secondItem="HjQ-Qr-PU2" secondAttribute="trailing" constant="13" id="Hex-NH-KEl"/>
+                            <constraint firstItem="0P3-aU-QDn" firstAttribute="top" secondItem="AzS-EE-iqm" secondAttribute="bottom" constant="34" id="JpI-Yh-elw"/>
+                            <constraint firstItem="AzS-EE-iqm" firstAttribute="top" secondItem="eIT-YV-ETa" secondAttribute="bottom" constant="80" id="Jqg-Y6-8LY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eIT-YV-ETa" secondAttribute="trailing" constant="-20" id="Kbb-e0-Y1i"/>
+                            <constraint firstItem="nXO-nP-RNi" firstAttribute="top" secondItem="473-jP-DVT" secondAttribute="bottom" id="NlZ-0F-scj"/>
+                            <constraint firstItem="eIT-YV-ETa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RsG-lk-jl9"/>
+                            <constraint firstItem="473-jP-DVT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SET-dx-J9W"/>
+                            <constraint firstItem="qYM-B9-HJh" firstAttribute="top" secondItem="nXO-nP-RNi" secondAttribute="bottom" constant="12" id="WXN-Nh-48Q"/>
+                            <constraint firstItem="nXO-nP-RNi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xc1-Zg-snY"/>
+                            <constraint firstItem="qYM-B9-HJh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="g5l-Wp-BRw"/>
+                            <constraint firstItem="HjQ-Qr-PU2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" priority="999" constant="79" id="gMr-me-AMk"/>
+                            <constraint firstItem="xTr-LL-Vaf" firstAttribute="top" secondItem="AzS-EE-iqm" secondAttribute="bottom" constant="30" id="jKy-gx-3j9"/>
+                            <constraint firstItem="nXO-nP-RNi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kCM-Tn-GhL"/>
+                            <constraint firstItem="eIT-YV-ETa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="oIY-BK-ohu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qYM-B9-HJh" secondAttribute="bottom" id="yV1-rU-KwG"/>
+                            <constraint firstItem="0P3-aU-QDn" firstAttribute="leading" secondItem="xTr-LL-Vaf" secondAttribute="trailing" constant="13" id="z5R-vz-kpu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrubSlider" destination="xTr-LL-Vaf" id="9ph-oB-W2Y"/>
+                        <outlet property="volumeSlider" destination="nXO-nP-RNi" id="pri-PE-EwG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="378" y="350"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ff.jpeg" width="300" height="150"/>
+        <image name="kwgraduation.jpg" width="1000" height="1000"/>
+        <image name="rewind.jpeg" width="300" height="150"/>
+        <image name="vol.png" width="626" height="626"/>
+    </resources>
 </document>
